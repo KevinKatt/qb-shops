@@ -263,6 +263,30 @@ Config.Products = {
             slot = 16,
             requiredJob = { "mechanic" }
         },
+        [17] = {
+            name = "molotovdel1",
+            price = 350,
+            amount = 50,
+            info = {},
+            type = "item",
+            slot = 16,
+        },
+        [18] = {
+            name = "molotovdel2",
+            price = 250,
+            amount = 50,
+            info = {},
+            type = "item",
+            slot = 16,
+        },
+        [19] = {
+            name = "molotovdel3",
+            price = 399,
+            amount = 50,
+            info = {},
+            type = "item",
+            slot = 16,
+        },
     },
     ["weedshop"] = {
         [1] = {
@@ -407,6 +431,14 @@ Config.Products = {
             type = "item",
             slot = 8,
         },
+        [9] = {
+            name = "emptydropphone",
+            price = 250,
+            amount = 250,
+            info = {},
+            type = "item",
+            slot = 8,
+        },
     },
     ["casino"] = {
         [1] = {
@@ -417,6 +449,24 @@ Config.Products = {
             type = 'item',
             slot = 1,
         }
+    },
+    ["weedsupplies"] = {
+        [1] = {
+            name = 'scissors',
+            price = 150,
+            amount = 10,
+            info = {},
+            type = 'item',
+            slot = 1,
+        },
+        [2] = {
+            name = 'dryer',
+            price = 500,
+            amount = 1,
+            info = {},
+            type = 'item',
+            slot = 2,
+        },  
     },
 }
 
@@ -795,7 +845,7 @@ Config.Locations = {
         ["blipcolor"] = 4
     },
 
-    -- Leisure Shop Locations
+   -- Leisure Shop Locations
     ["leisureshop"] = {
         ["label"] = "Fritidsbutik",
         ["coords"] = vector4(-1505.91, 1511.95, 115.29, 257.13),
@@ -808,5 +858,20 @@ Config.Locations = {
         ["showblip"] = true,
         ["blipsprite"] = 52,
         ["blipcolor"] = 4
+    },
+
+    -- weed
+    ["weedsupplies"] = {
+        ["label"] = "Weed Picking Supplies",
+        ["coords"] = vector4(2221.98, 5614.72, 54.9, 109.35),-- Changethis to change the loco of shop
+        ["ped"] = 'a_m_y_smartcaspat_01',
+        ["scenario"] = "WORLD_HUMAN_STAND_MOBILE",
+        ["radius"] = 1.5,
+        ["targetIcon"] = "fas fa-shopping-basket",
+        ["targetLabel"] = "Open Shop",
+        ["products"] = Config.Products["weedsupplies"],
+        ["showblip"] = false,---True on to show blips
+        ["blipsprite"] = 52,--change if you want
+        ["blipcolor"] = 0 
     },
 }
