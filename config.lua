@@ -167,7 +167,7 @@ Config.Products = {
         },
         [5] = {
             name = "binoculars",
-            price = 225,
+            price = 350,
             amount = 50,
             info = {},
             type = "item",
@@ -366,6 +366,40 @@ Config.Products = {
             slot = 3,
         },
     },
+    ["ammo"] = {
+        [1] = {
+            name = "pistol_ammo",
+            price = 1000,
+            amount = 50,
+            info = {},
+            type = "item",
+            slot = 1,
+        },
+        [2] = {
+            name = "shotgun_ammo",
+            price = 2500,
+            amount = 50,
+            info = {},
+            type = "item",
+            slot = 2,
+        },
+        [3] = {
+            name = "smg_ammo",
+            price = 2500,
+            amount = 50,
+            info = {},
+            type = "item",
+            slot = 3,
+        },
+        [4] = {
+            name = "rifle_ammo",
+            price = 2750,
+            amount = 50,
+            info = {},
+            type = "item",
+            slot = 3,
+        },
+    },
     ["weapons"] = {
         [1] = {
             name = "laptop",
@@ -409,7 +443,7 @@ Config.Products = {
         },
         [6] = {
             name = "weapon_switchblade",
-            price = 1500,
+            price = 2500,
             amount = 250,
             info = {},
             type = "item",
@@ -417,7 +451,7 @@ Config.Products = {
         },
         [7] = {
             name = "weapon_knuckle",
-            price = 1000,
+            price = 2000,
             amount = 250,
             info = {},
             type = "item",
@@ -425,7 +459,7 @@ Config.Products = {
         },
         [8] = {
             name = "weapon_snspistol",
-            price = 12500,
+            price = 14500,
             amount = 250,
             info = {},
             type = "item",
@@ -434,6 +468,30 @@ Config.Products = {
         [9] = {
             name = "emptydropphone",
             price = 250,
+            amount = 250,
+            info = {},
+            type = "item",
+            slot = 8,
+        },
+        [10] = {
+            name = "weapon_golfclub",
+            price = 3500,
+            amount = 250,
+            info = {},
+            type = "item",
+            slot = 8,
+        },
+        [11] = {
+            name = "weapon_knife",
+            price = 5500,
+            amount = 250,
+            info = {},
+            type = "item",
+            slot = 8,
+        },
+        [12] = {
+            name = "weapon_machete",
+            price = 7500,
             amount = 250,
             info = {},
             type = "item",
@@ -733,7 +791,7 @@ Config.Locations = {
     -- Jula Locations
     ["jula1"] = {
         ["label"] = "Jula",
-        ["coords"] = vector4(45.68, -1749.04, 29.61, 53.13),
+        ["coords"] = vector4(60.31, -1579.8, 29.6, 49.19),
         ["ped"] = 'mp_m_waremech_01',
         ["scenario"] = "WORLD_HUMAN_CLIPBOARD",
         ["radius"] = 1.5,
@@ -773,7 +831,7 @@ Config.Locations = {
 
     -- Black Market Locations
     ["blackmarket"] = {
-        ["label"] = "Black Market",
+        ["label"] = "Black market",
         ["coords"] = vector4(895.03, -1142.68, 25.94, 357.56),
         ["ped"] = 's_m_y_ammucity_01',
         ["scenario"] = "WORLD_HUMAN_COP_IDLES",
@@ -786,6 +844,20 @@ Config.Locations = {
         ["blipcolor"] = 4
     },
     
+    ["blackmarket2"] = {
+        ["label"] = "pistolskott marknaden",
+        ["coords"] = vector4(2545.44, 362.76, 108.61, 92.11),
+        ["ped"] = 'g_m_m_korboss_01',
+        ["scenario"] = "WORLD_HUMAN_COP_IDLES",
+        ["radius"] = 1.5,
+        ["targetIcon"] = "fas fa-gun",
+        ["targetLabel"] = "Handla",
+        ["products"] = Config.Products["ammo"],
+        ["showblip"] = false,
+        ["blipsprite"] = 110,
+        ["blipcolor"] = 4
+    },
+
     -- Casino Locations
     ["casino1"] = {
         ["label"] = "Diamond Casino",
@@ -858,20 +930,5 @@ Config.Locations = {
         ["showblip"] = true,
         ["blipsprite"] = 52,
         ["blipcolor"] = 4
-    },
-
-    -- weed
-    ["weedsupplies"] = {
-        ["label"] = "Weed Picking Supplies",
-        ["coords"] = vector4(2221.98, 5614.72, 54.9, 109.35),-- Changethis to change the loco of shop
-        ["ped"] = 'a_m_y_smartcaspat_01',
-        ["scenario"] = "WORLD_HUMAN_STAND_MOBILE",
-        ["radius"] = 1.5,
-        ["targetIcon"] = "fas fa-shopping-basket",
-        ["targetLabel"] = "Open Shop",
-        ["products"] = Config.Products["weedsupplies"],
-        ["showblip"] = false,---True on to show blips
-        ["blipsprite"] = 52,--change if you want
-        ["blipcolor"] = 0 
     },
 }
