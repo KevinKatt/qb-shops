@@ -397,7 +397,7 @@ Config.Products = {
             amount = 50,
             info = {},
             type = "item",
-            slot = 3,
+            slot = 4,
         },
     },
     ["weapons"] = {
@@ -471,7 +471,7 @@ Config.Products = {
             amount = 250,
             info = {},
             type = "item",
-            slot = 8,
+            slot = 9,
         },
         [10] = {
             name = "weapon_golfclub",
@@ -479,7 +479,7 @@ Config.Products = {
             amount = 250,
             info = {},
             type = "item",
-            slot = 8,
+            slot = 10,
         },
         [11] = {
             name = "weapon_knife",
@@ -487,7 +487,7 @@ Config.Products = {
             amount = 250,
             info = {},
             type = "item",
-            slot = 8,
+            slot = 11,
         },
         [12] = {
             name = "weapon_machete",
@@ -495,7 +495,7 @@ Config.Products = {
             amount = 250,
             info = {},
             type = "item",
-            slot = 8,
+            slot = 12,
         },
     },
     ["casino"] = {
