@@ -524,7 +524,7 @@ Config.Products = {
             info = {},
             type = 'item',
             slot = 2,
-        },  
+        },
     },
 }
 
